@@ -23,20 +23,50 @@ h1{
   margin-right: 0;
 }
 
-.mainimage{
-  width: 960px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+.mainivisual img{
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media(max-width:600px){
+  .mainivisual img{
+    height: 100vh;
+  }
 }
 
 .about{
-  max-width: 736px;
-  padding: 0 1.5rem;
-  margin: 3rem auto 4rem;
+  text-align: center;
 }
 
-.about p{
-  margin-bottom: 3rem;
+.section-title{
+  font-size: 34px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+    
+
+.about .contents{
+  display: flex;
+}
+
+.about .contents .content{
+  width: calc(100%/3);
+}
+
+.about .contents .content img{
+  width: 100%;
+}
+
+@media(max-width:600px){
+  .about .contents{
+    flex-direction: column;
+  }
+  .about .contents .content{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
 }
 
 .heading-large{
